@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Câmera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-button expand="block" fill="outline" (click)="takePicture()">Tirar foto</ion-button>
+  </ion-grid>
+
+  <ion-grid>
+    <!--<img src="{{ photo }}" />-->
+    <img *ngIf="photo" [src]="photo">
+  </ion-grid>
+</ion-content>
